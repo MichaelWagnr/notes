@@ -1,0 +1,29 @@
+Building/Deploying Create-React-App to GitHub Pages
+
+1. Install 'gh-pages' package with the command:
+    
+    yarn add gh-pages
+
+2. Add homepage property to package.json file:
+
+    {
+        "name": "name",
+        "version: "1.0.0",
+        "private": "true",
+        "homepage": "https://{username}.github.io/{repo-name}"
+        ...
+    }
+
+3. Add deploy scripts to package.json file:
+
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        ...
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build"
+    }
+
+4. git add commit push
+
+5. yarn run deploy
