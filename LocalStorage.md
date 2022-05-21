@@ -26,7 +26,7 @@ useEffect(() => {
         - the key of the data (in double quotes)
     - wrap localStorage.getItem() in JSON.parse() if the key returns an object that has been stringified.
 
-## useState() to get state
+## useState() - to get state
 
 4. useState takes an arrow function as an argument where the body is the localStorage.getItem() method call + || OR logical operator + default value to fall back on if nothing has been written to localStorage.
     - ex:
